@@ -14,7 +14,7 @@ import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.rohitk06.site",
+  site: "https://simoferre98.github.io/",
   markdown: {
     ...markdownConfig
   },
@@ -34,8 +34,8 @@ export default defineConfig({
     }
   }), robotsTxt({
     sitemap: [
-      'https://www.rohitk06.site/sitemap-0.xml',
-      'http://www.rohitk06.site/sitemap-index.xml',
+      'https://simoferre98.github.io/sitemap-0.xml',
+      'https://simoferre98.github.io/sitemap-index.xml',
     ],
   })]
   // output: "server",
