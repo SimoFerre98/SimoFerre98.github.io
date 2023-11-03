@@ -15,11 +15,7 @@ This is my personal portfolio website built using Tailwind CSS and Astro. It sho
 
   
 
-![Portfolio Website Preview](https://pbs.twimg.com/media/F6iOZw3WAAAtoqK?format=jpg&name=medium)
-
-  
-
-You can check out the live website [here](https://rohitk06.vercel.app).
+You can check out the live website [here](https://simoferre98.github.io).
 
   
 
@@ -63,7 +59,7 @@ To run this project locally, follow these steps:
 
 ```bash
 
-git clone https://github.com/DevRohit06/Portfolio-website.git
+git clone https://github.com/SimoFerre98/SimoFerre98.github.io.git
 
 ```
 
@@ -114,34 +110,3 @@ npm run dev
   
 
 You can use this project as a template for your own portfolio website. Customize it by adding your own projects, skills, and contact information.
-
-  
-
-## Contributing
-
-  
-
-If you'd like to contribute to this project, please open an issue or submit a pull request.
-
-  
-
-## License
-
-  
-
-This project is open source and available under the [MIT License](LICENSE).
-
-  
-
----
-
-  
-
-Icons made by [FontAwesome](https://fontawesome.com/).
-
-  
-
-Feel free to reach out if you have any questions or suggestions!
-
-
-[![Built with Astro](https://astro.badg.es/v2/built-with-astro/large.svg)](https://astro.build)
