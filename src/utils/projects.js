@@ -2,12 +2,14 @@ import ras from "../assets/images/ras.webp";
 import joke from "../assets/images/joke.webp";
 import lofi from "../assets/images/lofi.webp";
 import blog from "../assets/images/blog.webp";
-import BlockChange from "../assets/images/BlockChange.png";
+import BlockChange from "../assets/images/BlockChange_Logo_Square.png";
+
+// Creazione di un array di oggetti con i progetti
 const data = [
     {
         name: "BlockChange",
         type: "Cross-Platform App",
-        url: "https://doc-aid.vercel.app/",
+        url: "https://github.com/SimoFerre98/BlockChange",
         github: 'https://github.com/SimoFerre98/BlockChange',
         image: BlockChange,
         slug: "docaid",
@@ -18,14 +20,15 @@ const data = [
         name: "LeoFunLab",
         type: "Website",
         url: "https://www.leofunlab.com/",
-        github: "",
-        image: blog,
+        github: "https://github.com/SimoFerre98/Leofunlab",
+        image: Leofunlab,
         slug: "devblogs",
-        description: "This is a Blogging website made for technology lovers.",
-        tech: ['HTML', 'Javascript', 'Css', 'Tailwind css', 'Astro', 'Markdown']
+        description: "Site for a gym.",
+        tech: ['HTML', 'Javascript', 'Css']
     }
 ]
 
+// Selettore di progetti
 export function getData(){
     return data;
 }
