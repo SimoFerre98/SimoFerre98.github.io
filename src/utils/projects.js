@@ -3,6 +3,7 @@ import joke from "../assets/images/joke.webp";
 import lofi from "../assets/images/lofi.webp";
 import blog from "../assets/images/blog.webp";
 import BlockChange from "../assets/images/BlockChange_Logo_Square.png";
+import Leofunlab from "../assets/images/LeoFunLab_Image.jpg";
 
 // Creazione di un array di oggetti con i progetti
 const data = [
