@@ -20,8 +20,11 @@ export async function getStaticPaths({ paginate }) {
   return paginate(sortedPost, { pageSize: 9 });
 }
 const { page } = Astro.props;
-const prevPagination = page.url.prev ? "cursor-pointer" : "cursor-not-allowed";
-const nextPagination = page.url.next ? "cursor-pointer" : "cursor-not-allowed";
+/* const prevPagination = page.url.prev ? "cursor-pointer" : "cursor-not-allowed";
+const nextPagination = page.url.next ? "cursor-pointer" : "cursor-not-allowed"; */
+const prevPagination = page?.url?.prev ? "cursor-pointer" : "cursor-not-allowed";
+const nextPagination = page?.url?.next ? "cursor-pointer" : "cursor-not-allowed";
+
 ---
 
 <Layout title="Blog | Gleisson Simone Ferrero">
