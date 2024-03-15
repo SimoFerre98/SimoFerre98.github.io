@@ -8,15 +8,11 @@ const data = getData();
 data-aos-anchor-placement="top-bottom"
 data-aos-delay="500"  id="projects" class="text-primary body-font m-6 w-5/6 mx-auto">
   <div class="container px-5 py-24 mx-auto">
-    <h1
-      class="mb-8 font-extrabold text-center text-4xl text-transparent bg-clip-text bg-gradient-to-tr from-[#d7d7d7] to-[#616161]"
-    >
+    <h1 class="mb-8 font-extrabold text-center text-4xl text-transparent bg-clip-text bg-gradient-to-tr from-[#d7d7d7] to-[#616161]">
       Recent Projects
     </h1>
 
-    <p
-      class="text-gray-400 font-medium text-lg text-center mb-16 w-full sm:w-5/6 mx-auto"
-    >
+    <p class="text-gray-400 font-medium text-lg text-center mb-16 w-full sm:w-5/6 mx-auto">
       Browse through my projects and see the diverse range of websites I've
       designed and developed. Each project comes with a detailed description and
       links for further exploration.
@@ -25,12 +21,9 @@ data-aos-delay="500"  id="projects" class="text-primary body-font m-6 w-5/6 mx-a
       <h1 class="font-extrabold text-xl">Latest Projects</h1>
       <a class="hover:text-gray-400" href="/projects">view more</a>
     </div>
-    <div
-      class="max-w-screen grid grid-cols-1 gap-8 md:grid md:grid-cols-2  lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3"
-    >
+    <div class="max-w-screen grid grid-cols-1 gap-8 md:grid md:grid-cols-2  lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3">
       {
-        data &&
-          data.slice(0, 3).map((item, index) => {
+        data && data.slice(0, 3).map((item, index) => {
             return (
               <a
                 href={`${item.url}`}
