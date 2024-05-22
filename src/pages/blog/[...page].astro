@@ -22,8 +22,8 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 /* const prevPagination = page.url.prev ? "cursor-pointer" : "cursor-not-allowed";
 const nextPagination = page.url.next ? "cursor-pointer" : "cursor-not-allowed"; */
-const prevPagination = page?.url?.prev ? "cursor-pointer" : "cursor-not-allowed";
-const nextPagination = page?.url?.next ? "cursor-pointer" : "cursor-not-allowed";
+const prevPagination = (page as { url?: { prev?: string } })?.url?.prev ? "cursor-pointer" : "cursor-not-allowed";
+const nextPagination = (page as { url?: { next?: string } })?.url?.next ? "cursor-pointer" : "cursor-not-allowed";
 
 ---
 
