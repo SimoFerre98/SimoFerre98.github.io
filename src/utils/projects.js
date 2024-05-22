@@ -11,11 +11,11 @@ const data = [
         name: "BlockChange",
         type: "Cross-Platform App",
         url: "https://github.com/SimoFerre98/BlockChange",
-        github: 'https://github.com/SimoFerre98/BlockChange',
+        github: "https://github.com/SimoFerre98/BlockChange",
         image: BlockChange,
-        slug: "BlockChange",
+        slug: "blockchange",
         description: "Thesis project for the degree in Computer Engineering. The project is a decentralized application that allows to buy cripto through the blockchain using testnet.",
-        tech: ['Dart', 'JavaScript', 'Kotlin', 'Solidity', 'Swift','HTML']
+        tech: ["Dart", "JavaScript", "Kotlin", "Solidity", "Swift", "HTML"]
     },
     {
         name: "LeoFunLab",
@@ -23,9 +23,9 @@ const data = [
         url: "https://www.leofunlab.com/",
         github: "https://github.com/SimoFerre98/Leofunlab",
         image: Leofunlab,
-        slug: "LeoFunlab",
+        slug: "leofunlab",
         description: "Site for a gym.",
-        tech: ['HTML', 'Javascript', 'css']
+        tech: ["HTML", "JavaScript", "CSS"]
     },
     {
         name: "BRAINS2",
@@ -33,9 +33,9 @@ const data = [
         url: "https://github.com/luciry/BRAIN",
         github: "https://github.com/luciry/BRAIN",
         image: Brains2,
-        slug: "BRAIN",
+        slug: "brains2",
         description: "Project introduces an advanced simulator designed to assist decision-makers in strategically implementing smart cities and green infrastructure initiatives.",
-        tech: ['Unity', 'Python', 'C#']
+        tech: ["Unity", "Python", "C#"]
     }
 ]
 
