@@ -102,11 +102,3 @@ npm run dev
   
 
 5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see the website locally.
-
-  
-
-## Usage
-
-  
-
-You can use this project as a template for your own portfolio website. Customize it by adding your own projects, skills, and contact information.
