@@ -14,7 +14,7 @@ import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.rohitk06.site",
+  site: "https://simoferre98.github.io/",
   markdown: {
     ...markdownConfig
   },
