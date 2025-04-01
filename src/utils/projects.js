@@ -9,7 +9,6 @@ import Brains2 from "../assets/images/StartingPageBrains.png";
 const data = [
     {
         name: "BlockChange",
-        //url: "/SimoFerre98.github.io/projects/blockchange", // Updated path
         type: "Cross-Platform App",
         url: "https://github.com/SimoFerre98/BlockChange",
         github: "https://github.com/SimoFerre98/BlockChange",
