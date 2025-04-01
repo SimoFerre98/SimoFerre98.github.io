@@ -5,11 +5,9 @@ import Footer from "../../components/Footer.astro";
 import { getCollection } from "astro:content";
 import { getFormattedDate } from "../../utils/all";
 const post = await getCollection("blog");
-const sortedPost = post.sort(
-  (a, b) =>
-    new Date(b.data.publishDate).valueOf() -
-    new Date(a.data.publishDate).valueOf()
-);
+
+/* 
+Per far visualizzare tutti gli articoli
 export async function getStaticPaths({ paginate }) {
   const post = await getCollection("blog");
   const sortedPost = post.sort(
@@ -18,6 +16,20 @@ export async function getStaticPaths({ paginate }) {
       new Date(a.data.publishDate).valueOf()
   );
   return paginate(sortedPost, { pageSize: 9 });
+}
+*/
+// Filtra solo l'articolo sul deep fake
+const paperPost = post.filter(item => item.slug === "deep-fake-dynamics-modeling");
+const sortedPost = post.sort(
+  (a, b) =>
+    new Date(b.data.publishDate).valueOf() -
+    new Date(a.data.publishDate).valueOf()
+);
+export async function getStaticPaths({ paginate }) {
+  const post = await getCollection("blog");
+  // Filtra solo l'articolo sul deep fake per la paginazione
+  const paperPost = post.filter(item => item.slug === "deep-fake-dynamics-modeling");
+  return paginate(paperPost, { pageSize: 9 });
 }
 const { page } = Astro.props;
 /* const prevPagination = page.url.prev ? "cursor-pointer" : "cursor-not-allowed";

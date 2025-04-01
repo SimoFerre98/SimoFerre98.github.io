@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import { getFormattedDate } from "../utils/all";
 const post = await getCollection("blog");
+const paperPost = post.filter(item => item.slug === "deep-fake-dynamics-modeling");
 const sortedPost = post.sort(
   (a, b) =>
     new Date(b.data.publishDate).valueOf() -
@@ -21,7 +22,7 @@ const sortedPost = post.sort(
               class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mx-auto justify-center"
             >
               {
-                sortedPost.slice(0,3).map(async (item) => {
+                paperPost.map(async (item) => {
                   const { remarkPluginFrontmatter } = await item.render();
                   let time = getFormattedDate(item.data.publishDate);
                   return (

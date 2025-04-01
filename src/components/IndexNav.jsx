@@ -38,7 +38,7 @@ export default function IndexNav() {
               <a onClick={() => isShow(false)} aria-label="about" href="/#about">About</a>
               <a onClick={() => isShow(false)} aria-label="blogs" href="/blog">Blogs</a>
               <a onClick={() => isShow(false)} aria-label="contact" href="/#contact">Contact</a>
-              <a>Download CV</a>
+              <a onClick={() => isShow(false)} aria-label="download cv" href="/CV_Gleisson_Simone_Ferrero_IT_EN.pdf" download>Download CV</a>
             </ul>
           </div>
         </div>
