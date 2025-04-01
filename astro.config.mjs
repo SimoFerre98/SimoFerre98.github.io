@@ -14,7 +14,9 @@ import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://simoferre98.github.io/",
+  // site: "https://simoferre98.github.io/",
+  site: "https://simoferre98.github.io",
+  base: "/SimoFerre98.github.io/",  // Add this line
   markdown: {
     ...markdownConfig
   },
